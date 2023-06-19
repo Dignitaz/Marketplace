@@ -13,4 +13,5 @@ CRUD of ads with firebase.
 
 ## Screenshots
 
-![App Screenshot](https://paste.pics/2340ec3a51660ff8b7d2cb37cf27182e)
+![obraz](https://github.com/Dignitaz/Marketplace/assets/110108719/36f58a46-5267-4831-9df6-3b9bfca64f5f)
+
