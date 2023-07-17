@@ -15,12 +15,17 @@ export const UserProvider = ({ children }) => {
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
   const [user, setUser] = useState({});
+  const [offerCounter, setOfferCoutner] = useState(1);
 
   useEffect(() => {
     onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
     });
   }, []);
+
+  const newOfferNumber = (prev) => {
+    setOfferCoutner(prev + 1);
+  };
 
   const register = async () => {
     try {
@@ -63,6 +68,8 @@ export const UserProvider = ({ children }) => {
         setLoginEmail,
         setLoginPassword,
         user,
+        offerCounter,
+        newOfferNumber,
       }}
     >
       {children}
